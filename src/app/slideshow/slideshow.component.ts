@@ -11,7 +11,7 @@ export class SlideshowComponent implements OnInit {
   headlines = [
     'Born to code',
     'Irren ist menschlich. Aber für das richtige Chaos, braucht man einen Computer.',
-    'Schizophrenie ist auch nur eine Form von Multitasking',
+    'Bring engineering to the next level',
     'Früh aufstehen ist der erste Schritt in die falsche Richtung!'
   ];
   currentImage = 0;

@@ -2,6 +2,8 @@ header {
     position: absolute;
     left: 0;
     right: 0;
+    top: 0;
+    bottom: 0;
     height: 80px;
     z-index: 1;
     padding-left: 120px;
@@ -16,7 +18,7 @@ header {
         text-decoration: none;
         margin-left: 32px;
         font-weight: 800;
-        font-size: 32px;
+        font-size: 28px;
 
         &:hover {
             color: rgba(195, 195, 195, 0.8);
@@ -25,6 +27,7 @@ header {
 
     img {
         height: 60px;
+        cursor: pointer;
     }
 }
 

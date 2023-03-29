@@ -9,7 +9,7 @@ const Header = () => {
             CMP
           </span>
           <i>
-            <MdAddHome className="w-4 h-4" />
+            <MdAddHome className="w-10 h-10" />
           </i>
       </Link>
     </header>

@@ -2,7 +2,11 @@ import Link from "next/link";
 import { MdAddHome } from "react-icons/md";
 import { SocialIcon } from 'react-social-icons';
 
-const Header = () => {
+interface Props {
+  socialIcons: SocialIcon[];
+}
+
+const Header = ({ socialIcons }: Props) => {
   return (
     <>
       <header className="z-20 flex items-center justify-between px-5 py-3 shadow-lg bg-violet-100 text-zinc-800 dark:bg-zinc-800 dark:text-white h-[60px] sticky top-0">
@@ -29,24 +33,15 @@ const Header = () => {
           </a>
         </div>
         <div className="flex items-center space-x-5">
-          <SocialIcon
-            url="https://www.instagram.com/#" 
+          {socialIcons.map((icon) => (
+            // eslint-disable-next-line react/jsx-key
+            <SocialIcon
+            url={icon.url}
             bgColor="rgb(3,105,161)" 
             fgColor="white"
             style={{width:40,height:40}} 
-          />
-          <SocialIcon
-            url="https://github.com/jrazny" 
-            bgColor="rgb(3,105,161)"
-            fgColor="white" 
-            style={{width:40,height:40}} 
-          />
-          <SocialIcon
-            url="https://www.facebook.com/#" 
-            bgColor="rgb(3,105,161)" 
-            fgColor="white" 
-            style={{width:40,height:40}} 
-          />          
+            /> 
+          ))}      
         </div>
       </header>
     </>

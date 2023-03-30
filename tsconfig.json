@@ -31,7 +31,7 @@
     "**/*.tsx",
     "pages/index1tsx",
     ".next/types/**/*.ts"
-, "pages/index1tsx"  ],
+, "pages/index1tsx", "lib/sanity.js", "lib/sanity.js", "utils/fetchSocialIcons.js"  ],
   "exclude": [
     "node_modules"
   ]

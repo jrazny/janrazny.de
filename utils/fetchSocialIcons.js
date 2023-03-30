@@ -8,6 +8,6 @@ export const fetchSocialIcons = async () => {
       }
     `;
 
-    const socialIcons = await sanityClient.fgetch(query);
+    const socialIcons = await sanityClient.fetch(query);
     return socialIcons;
 }

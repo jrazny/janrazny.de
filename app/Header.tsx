@@ -36,10 +36,10 @@ const Header = ({ socialIcons }: Props) => {
           {socialIcons.map((icon) => (
             // eslint-disable-next-line react/jsx-key
             <SocialIcon
-            url={icon.url}
-            bgColor="rgb(3,105,161)" 
-            fgColor="white"
-            style={{width:40,height:40}} 
+              url={icon.url}
+              bgColor="rgb(3,105,161)" 
+              fgColor="white"
+              style={{width:40,height:40}} 
             /> 
           ))}      
         </div>
